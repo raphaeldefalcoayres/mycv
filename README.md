@@ -1,6 +1,6 @@
 # My CV
 
-Simple and open source project front-end for show my curriculum using HTML, CSS and Javascript
+The simple and open source project front-end for show my curriculum using HTML, CSS and Javascript
 
 ## License
 
