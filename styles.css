@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+ul {
+  padding-left: 20px;
+}
+
 *:focus {
   outline: 0;
 }
@@ -13,6 +17,7 @@ html,
 body,
 #root {
   height: 100%;
+  overflow-x: hidden;
 }
 
 body {
@@ -27,7 +32,7 @@ button {
 }
 
 .container {
-  width: 900px;
+  max-width: 900px;
   margin: 0 auto;
   padding: 30px 0;
   display: flex;
@@ -100,4 +105,20 @@ img {
 .list-check li:before {
   content: "✓";
   padding-right: 5px;
+}
+
+@media screen and (max-width: 996px) {
+  .row {
+    flex-direction: column;
+  }
+  .col {
+    text-align: left !important;
+  }
+  .col:first-child {
+    border-right: none;
+    order: 2;
+  }
+  .container {
+    padding: 15px 15px;
+  }
 }
